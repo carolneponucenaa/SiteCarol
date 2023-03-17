@@ -4,16 +4,144 @@
     padding:0;
     box-sizing: border-box;
 }
+.logo{
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+header{
+    width: 100%;
+}
 
 body{
+    overflow: hidden;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 100px 1fr 100px;
-    padding: 70px 70px 24px 70px;
-    background-image: url(./img/black-widow.webp);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 100px 20px 20px 20px;
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2021/07/Viuva-Negra.jpg?quality=90&strip=info&w=1024&resize=1200,800);
     background-repeat: no-repeat;
-    background-size:100%;
-    color: #e7e7e7;
-    font-family: 'Righteous', cursive;
+    background-size:cover;
+    background-position: center;
+    position: relative;
 
 }
+main {
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: absolute;
+    top: 36%;
+    left: 6%;
+    z-index: 1;
+}
+
+img {
+    position: absolute;
+    top: 40px;
+    left: 21%;
+    transform: translateX(-50%);
+    z-index: 0;
+    width: 40%;
+}
+
+nav {
+    font-size: 100%;
+    width: 100%;
+    position: fixed; 
+    top: 3%; 
+    align-self: flex-start;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    transition: background-color 0.2s ease;
+}
+
+.description__text {
+    color: white;
+    font-size: 100%;
+    max-width: 90%;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.redes-sociais{
+    place-self: center end;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.youtube{
+
+}
+.twitter{
+   
+}
+.facebook{
+    
+}
+.instagram{
+    
+}
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40%;
+    margin-left: 45%;
+}
+p {
+    color: aliceblue;
+    background: linear-gradient (to right,rgba(255, 255, 255, 0.5), white url('background-image.jpg'));
+    background-blend-mode: overlay;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10% -10%;
+  }
+  
+  .video-container > div {
+    width: 30%;
+    margin-left: 3%;
+    margin-bottom: 10%;
+  }
+  
+  .video-container > div > iframe {
+    margin-left: 20%;
+    width: 90%;
+    height: 90%;
+  }
+  .redes {
+    width: 10%; 
+    position: absolute;
+    left: 95%;
+    top: 30%;
+  }
